@@ -1,0 +1,9 @@
+.clock{
+    margin-top: 20px;
+    border: 1px solid gray;
+    width: 235px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    box-shadow: 4px 4px 4px gray;
+}

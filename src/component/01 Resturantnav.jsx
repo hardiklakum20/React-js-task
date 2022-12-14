@@ -13,13 +13,15 @@ import {
   import Smart_watch from './Smart_watch';
   import Userref_formvalidation from './Useref_formvalidation';
   import Stop_watch from './Stop_watch';
+  import Functapi_task from './Functapi_task'
 
   
 
 
 export default function Resturantnav() {
     const Numbers = {'/breackfast':'Breackfast','/lunch':'Lunch','/dinner':'Dinner','/increament_and_decreament':'Increament_and_decreament',
-                        '/login':'Login','/smart_watch':'Smart_watch','/userref_formvalidation':'Userref_formvalidation','/stop_watch':'Stop_watch'}
+                        '/login':'Login','/smart_watch':'Smart_watch','/userref_formvalidation':'Userref_formvalidation','/stop_watch':'Stop_watch',
+                        'functapi_task':'Functapi_task'}
     const returndata = Object.entries(Numbers).map((res,i)=>{
         return <li className="nav-item ps-3" key={i}>
             <Link className="nav-link" to={res[0]}>{res[1]}</Link>
@@ -49,6 +51,7 @@ export default function Resturantnav() {
                 <Route path='/smart_watch' element={<Smart_watch/>}/>
                 <Route path='/userref_formvalidation' element={<Userref_formvalidation/>}/>
                 <Route path='/stop_watch' element={<Stop_watch/>}/>
+                <Route path='/functapi_task' element={<Functapi_task/>}/>
             </Routes>
         </Router>
       </>

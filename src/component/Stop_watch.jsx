@@ -44,7 +44,7 @@ function Stop_watch(props) {
         <div className="container">
             <div className="row">
                 <div className="col">
-                    <h1>{("0"+ Math.floor((state.time / 60000) % 60)).slice(-2)}:{("0"+ Math.floor((state.time / 100) % 60)).slice()}:{("0"+ Math.floor((state.time / 60) % 100)).slice(-2)}s</h1>
+                    <h1>{("0"+ Math.floor((state.time / 60000) % 60)).slice(-2)}:{("0"+ Math.floor((state.time / 100) % 60)).slice()}:{("0" + ((state.time / 60) % 100)).slice(-2)}s</h1>
                     <br />
                     <button className='btn btn-primary' onClick={()=>dispatch({type:'start'})}>
                         Start
